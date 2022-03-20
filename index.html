@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>App</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+  body {
+    background-color: aqua;
+  }
+
+  div {
+    font-size: 30pt;
+  }
+  </style>
+<script>
+  function checkPassword() {
+    var password = document.getElementById("passwordBox");
+    var passwordText = password.value;
+    if (passwordText == "test") {
+      return true;
+    }
+    alert ("Access denied! Incorrect password!");
+    return false;
+  }
+  </script>
+
+</head>
+<body>
+
+  <div><h1>The Access This App!</h1></div>
+
+  <div>Please enter the password to view this website. </div> <br>
+
+  <p>Password: <input id="passwordBox" type="password"/></p>
+
+  <a href="practice.html" onclick="return checkPassword();">
+    Click Here to submit and view website
+  </a>
+ 
+
+
+
+
+
+
+  </div>
+
+</body>
+</html>
